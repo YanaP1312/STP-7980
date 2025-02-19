@@ -10,6 +10,7 @@
 @import './gallery.scss';
 @import './footer.scss';
 @import './pages.scss';
+@import './popApp.scss';
 
 :root {
   font-family: 'Inter', sans-serif;
@@ -17,8 +18,8 @@
   line-height: 28px;
   font-weight: 400;
 
-  color: #141414;
-  background-color: #ffffff;
+  color: $_black_color;
+  background-color: $_fon_color;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
