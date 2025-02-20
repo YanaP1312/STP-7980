@@ -23,7 +23,7 @@ linkNav.forEach(link => {
 });
 
 document.addEventListener('click', e => {
-  if (!mobMenu.contains(e.target) && !openMobMenuBtn.contains(e.target)) {
+  if (!e.target.closest('.mob-menu') && !e.target.closest('.btn-mob-open')) {
     closeMobMenu();
   }
 });
