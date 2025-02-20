@@ -1,0 +1,40 @@
+.mob-menu {
+  position: fixed;
+  z-index: 9999999999;
+  top: 0;
+  left: 0;
+  width: 254px;
+  padding: 24px;
+  height: 100%;
+  background-color: $_pink_color;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+  @include media('desktop') {
+    display: none;
+  }
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+.btn-mob-close {
+  display: flex;
+  margin-left: auto;
+  margin-right: 0;
+  margin-bottom: 67px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.mob-menu .nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.mob-menu .nav-link {
+  padding: 0;
+}
