@@ -1,0 +1,30 @@
+.play-title {
+  margin-bottom: 50px;
+  margin-top: 60px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.item-content {
+  background-color: $_pink_color;
+  padding: 18px;
+  color: $_black_color;
+  font-size: 12px;
+  line-height: 18px;
+  // width: 220px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.item-counter {
+  background-color: $_pink_01_color;
+  border-radius: 50%;
+  display: flex;
+  width: 45px;
+  height: 45px;
+
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+

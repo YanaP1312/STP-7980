@@ -2,7 +2,7 @@
 
 .container {
   @include media(mobile) {
-    max-width: 375px;
+    min-width: 320px;
     padding: 0 40px;
   }
   @include media(desktop) {

@@ -14,7 +14,8 @@
 
 .benefits {
   margin-top: 60px;
-
+  display: grid;
+  justify-content: center;
   &-title {
     color: $_black_color;
     font-size: 24px;
@@ -29,7 +30,7 @@
 
   &-item {
     @include benefits;
-
+    width: 240px;
     &--text {
       &--black {
         @include benefits-text($_black_color);
