@@ -1,11 +1,10 @@
 @use './common/mixins';
 
 .hero {
-  margin-top: 24px;
+  padding-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 12px;
 }
 
@@ -14,16 +13,17 @@
   font-size: 32px;
   font-weight: 600;
   line-height: normal;
-  width: 240px;
-  // @include media(desktop) {
-  //   color: green;
-  // }
+  @include media(desktop) {
+    width: 1019px;
+  }
 }
 
 .hero-img {
   width: 240px;
   height: 189px;
   @include media(desktop) {
+    width: 508px;
+    height: 400px;
   }
 }
 
@@ -33,6 +33,7 @@
   font-size: 12px;
   line-height: 18px;
   text-align: left;
+  padding: 12px 0;
 }
 
 .hero-button {
