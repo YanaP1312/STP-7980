@@ -12,6 +12,10 @@ html {
 
 body {
   margin: 0;
+  padding-top: 58px;
+  @include media('desktop') {
+    padding-top: 72px;
+  }
 }
 
 h1,
@@ -57,4 +61,17 @@ img {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.container {
+  @include media(mobile) {
+    max-width: 320px;
+    padding: 0 40px;
+    margin: 0 auto;
+  }
+  @include media(desktop) {
+    min-width: 1200px;
+    padding: 0 80px;
+    margin: 0 auto;
+  }
 }
