@@ -15,12 +15,18 @@
   margin-bottom: 24px;
 }
 
+.wrap-for-btn {
+  position: relative;
+  height: 207px;
+}
+
 .swiper-slide {
-  max-width: 240px;
+  width: 240px;
   padding: 17px 20px;
   background-color: $_pink_color;
   font-size: 12px;
   line-height: 18px;
+  margin-bottom: 24px;
 }
 
 .auth-info-wrap {
@@ -29,14 +35,12 @@
   gap: 12px;
   margin-bottom: 8px;
 }
+.auth-name {
+  font-weight: 400;
+}
 .auth-comment {
   height: 90px;
-}
-
-.swiper-pagination {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 200px;
 }
 
 .swiper-pagination-bullet {
@@ -75,6 +79,7 @@
 
   .swiper {
     max-width: 880px;
+    height: 238px;
   }
   .swiper-wrapper {
     display: flex;
@@ -87,6 +92,7 @@
     padding: 24px;
     font-size: 20px;
     line-height: 28px;
+    margin-bottom: 0;
   }
 
   .auth-info-wrap {
@@ -96,6 +102,7 @@
 
   .auth-comment {
     height: 112px;
+    width: 376px;
   }
 
   .swiper-pagination {
