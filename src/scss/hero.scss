@@ -1,0 +1,54 @@
+@use './common/mixins';
+
+.hero {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+
+.hero-title {
+  color: $_accent_color;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: normal;
+  width: 240px;
+  // @include media(desktop) {
+  //   color: green;
+  // }
+}
+
+.hero-img {
+  width: 240px;
+  height: 189px;
+  @include media(desktop) {
+  }
+}
+
+.hero-text {
+  color: $_black_color;
+  width: 240px;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.hero-button {
+  display: flex;
+  width: 240px;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+
+  color: $_fon_color;
+  background-color: $_accent_color;
+  border: none;
+  gap: 10px;
+}
+
+.hero-icon {
+  width: 24px;
+  height: 27px;
+}
