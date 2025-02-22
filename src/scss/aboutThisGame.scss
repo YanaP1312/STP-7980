@@ -1,5 +1,8 @@
 .about {
   padding-top: 60px;
+  @include media(desktop) {
+    padding-top: 160px;
+  }
 }
 
 .about-title {
@@ -7,6 +10,10 @@
   font-size: 24px;
   font-weight: 600;
   margin-bottom: 12px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 24px;
+  }
 }
 
 .about-text {
@@ -15,5 +22,9 @@
   line-height: 18px;
   &:not(:last-child) {
     margin-bottom: 12px;
+  }
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 28px;
   }
 }

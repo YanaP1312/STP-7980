@@ -5,6 +5,14 @@
 .play-list {
   display: grid;
   gap: 35px;
+
+  @include media(desktop) {
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .play-title {
@@ -39,6 +47,17 @@
   &--5 {
     background-color: $_pink_04_color;
     color: $_fon_color;
+  }
+
+  @include media(desktop) {
+    width: 431px;
+    height: 160px;
+    padding: 38px 32px 38px 30px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    font-size: 20px;
+    line-height: 28px;
   }
 }
 

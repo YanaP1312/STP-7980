@@ -6,6 +6,18 @@
   flex-direction: column;
   align-items: center;
   gap: 12px;
+  @include media(desktop) {
+    padding-top: 60px;
+    gap: 0;
+    align-items: flex-start;
+    display: block;
+  }
+}
+
+.hero-content {
+  @include media(desktop) {
+   position: relative;
+  }
 }
 
 .hero-title {
@@ -15,6 +27,7 @@
   line-height: normal;
   @include media(desktop) {
     width: 1019px;
+    font-size: 64px;
   }
 }
 
@@ -24,6 +37,9 @@
   @include media(desktop) {
     width: 508px;
     height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -33,7 +49,14 @@
   font-size: 12px;
   line-height: 18px;
   text-align: left;
-  padding: 12px 0;
+  padding: 12px 0 0 0;
+  @include media(desktop) {
+    font-size: 20px;
+    width: 508px;
+    padding: 12px 0 58px 0;
+    font-weight: 400;
+    line-height: 28px;
+  }
 }
 
 .hero-button {
@@ -47,6 +70,9 @@
   background-color: $_accent_color;
   border: none;
   gap: 10px;
+  @include media(desktop) {
+    width: 508px;
+  }
 }
 
 .hero-icon {
