@@ -8,7 +8,6 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
-  background-color: rgba(240, 206, 226, 0.5);
   &.show {
     opacity: 1;
     visibility: visible;
@@ -56,6 +55,10 @@
   .cookies-yes {
     margin-bottom: 12px;
     background-color: $_accent_color;
+  }
+
+  .cookies-no {
+    color: $_black_color;
   }
 
   @include media('desktop') {
