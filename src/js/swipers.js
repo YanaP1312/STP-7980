@@ -70,13 +70,4 @@ document.addEventListener('DOMContentLoaded', function () {
       swiperInstance.keyboard.disable();
     });
   });
-
-  document.querySelectorAll('.swiper').forEach(swiper => {
-    swiper.addEventListener('touchstart', e => {
-      e.stopPropagation();
-      e.preventDefault();
-    });
-    swiper.addEventListener('touchmove', e => e.stopPropagation());
-    swiper.addEventListener('touchend', e => e.stopPropagation());
-  });
 });
