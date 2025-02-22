@@ -1,0 +1,76 @@
+// text-mixin
+@mixin benefits {
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin benefits-text($color) {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  color: $color;
+  // padding: 25px 14px;
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.benefits {
+  padding-top: 60px;
+  @include media(desktop) {
+    padding-top: 160px;
+  }
+  &-title {
+    color: $_black_color;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    @include media(desktop) {
+      justify-content: center;
+      flex-direction: initial;
+      flex-wrap: wrap;
+    }
+  }
+
+  &-item {
+    @include benefits;
+    width: 240px;
+    padding: 25px 14px;
+    @include media(desktop) {
+      width: 331px;
+      padding: 25px 14px;
+    }
+    &--text {
+      &--black {
+        @include benefits-text($_black_color);
+      }
+      &--white {
+        @include benefits-text($_fon_color);
+      }
+
+    }
+
+    &--variant-1 {
+      background-color: $_pink_color;
+    }
+    &--variant-2 {
+      background-color: $_pink_01_color;
+    }
+    &--variant-3 {
+      background-color: $_pink_02_color;
+    }
+    &--variant-4 {
+      background-color: $_pink_03_color;
+    }
+    &--variant-5 {
+      background-color: $_pink_04_color;
+    }
+  }
+}

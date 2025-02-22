@@ -1,0 +1,25 @@
+.footer {
+  margin-top: 42px;
+  background: $_pink_color;
+}
+
+.footer-container {
+  box-sizing: border-box;
+  padding: 30px 37px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-text {
+  color: $_black_color;
+  font-size: 10px;
+  font-weight: 400;
+  &:not(:last-child):not(:nth-child(3)) {
+    &::after {
+      content: '|';
+      color: $_black_color;
+      margin: 0 2px;
+    }
+  }
+}
