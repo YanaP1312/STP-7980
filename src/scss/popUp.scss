@@ -1,0 +1,93 @@
+.cookies-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  background-color: rgba(240, 206, 226, 0.5);
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.cookies-pop-up {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 240px;
+  padding: 13px 20px;
+  background-color: $_fon_color;
+  transition: transform 0.3s ease;
+
+  .title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 12px;
+    text-align: center;
+  }
+  .text {
+    font-size: 12px;
+    line-height: 18px;
+    margin-bottom: 46px;
+  }
+
+  button {
+    background-color: $_pink_color;
+    color: $_fon_color;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    width: 199px;
+    font-size: 16px;
+    line-height: normal;
+    border: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: $_accent_color;
+  }
+  .cookies-yes {
+    margin-bottom: 12px;
+    background-color: $_accent_color;
+  }
+
+  @include media('desktop') {
+    .title {
+      font-size: 64px;
+      margin-bottom: 54px;
+      text-align: left;
+    }
+    .text {
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 83px;
+    }
+    .btn-wrap {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    button {
+      width: 408px;
+      font-size: 32px;
+    }
+
+    .cookies-yes {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@include media('desktop') {
+  .cookies-pop-up {
+    width: 1040px;
+    padding: 57px 100px 36px;
+  }
+}

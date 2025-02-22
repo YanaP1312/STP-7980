@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
       observer: true,
       observeParents: true,
       grabCursor: true,
+      touchRatio: 1,
+      simulateTouch: true,
+      touchAngle: 60,
+      threshold: 5,
 
       pagination: {
         el: swiperContainer.querySelector('.swiper-pagination'),
@@ -68,7 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   document.querySelectorAll('.swiper').forEach(swiper => {
-    swiper.addEventListener('touchstart', e => e.stopPropagation());
+    swiper.addEventListener('touchstart', e => {
+      e.stopPropagation();
+      e.preventDefault();
+    });
     swiper.addEventListener('touchmove', e => e.stopPropagation());
     swiper.addEventListener('touchend', e => e.stopPropagation());
   });
