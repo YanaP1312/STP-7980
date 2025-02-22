@@ -11,6 +11,8 @@
 @import './footer.scss';
 @import './pages.scss';
 @import './popUp.scss';
+@import './container.scss';
+
 
 :root {
   font-family: 'Inter', sans-serif;
@@ -27,3 +29,4 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+
