@@ -27,11 +27,27 @@
     />
     <link rel="stylesheet" href="./scss/styles.scss" />
   </head>
-  <body>
+  <body class="additional-page">
     <div class="container">
-      <header>
+      <header class="add-page-header">
         <nav>
-          <a href="./index.html">Back to HOME</a>
+          <a class="link" href="./index.html">
+            <picture>
+              <source
+                srcset="
+                  ./img/icons/arrow-back.png,
+                  ./img/icons/arrow-back@2x.png 2x
+                "
+              />
+              <img
+                src="./img/icons/arrow-back.png"
+                alt="Arrow back icon"
+                width="24"
+                height="24"
+              />
+            </picture>
+            <p class="text">Back to HOME</p></a
+          >
         </nav>
       </header>
       <main>
