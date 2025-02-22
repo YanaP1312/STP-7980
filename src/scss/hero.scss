@@ -1,12 +1,23 @@
 @use './common/mixins';
 
 .hero {
-  margin-top: 24px;
+  padding-top: 24px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
   gap: 12px;
+  @include media(desktop) {
+    padding-top: 60px;
+    gap: 0;
+    align-items: flex-start;
+    display: block;
+  }
+}
+
+.hero-content {
+  @include media(desktop) {
+   position: relative;
+  }
 }
 
 .hero-title {
@@ -14,16 +25,21 @@
   font-size: 32px;
   font-weight: 600;
   line-height: normal;
-  width: 240px;
-  // @include media(desktop) {
-  //   color: green;
-  // }
+  @include media(desktop) {
+    width: 1019px;
+    font-size: 64px;
+  }
 }
 
 .hero-img {
   width: 240px;
   height: 189px;
   @include media(desktop) {
+    width: 508px;
+    height: 400px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
   }
 }
 
@@ -33,6 +49,14 @@
   font-size: 12px;
   line-height: 18px;
   text-align: left;
+  padding: 12px 0 0 0;
+  @include media(desktop) {
+    font-size: 20px;
+    width: 508px;
+    padding: 12px 0 58px 0;
+    font-weight: 400;
+    line-height: 28px;
+  }
 }
 
 .hero-button {
@@ -46,6 +70,9 @@
   background-color: $_accent_color;
   border: none;
   gap: 10px;
+  @include media(desktop) {
+    width: 508px;
+  }
 }
 
 .hero-icon {
