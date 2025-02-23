@@ -26,3 +26,264 @@
     }
   }
 }
+
+.main-terms {
+  font-size: 12px;
+  line-height: 18px;
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    color: $_accent_color;
+    margin-bottom: 4px;
+  }
+  h2 {
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    color: $_accent_color;
+  }
+  .hero-terms {
+    p {
+      margin-bottom: 12px;
+    }
+
+    .terms-text-container {
+      margin-bottom: 12px;
+      p {
+        margin-bottom: 0;
+      }
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+    }
+  }
+  .terms-change {
+    p {
+      margin-bottom: 12px;
+    }
+  }
+  @include media('desktop') {
+    h1 {
+      font-size: 64px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin-bottom: 8px;
+      font-size: 32px;
+    }
+    .hero-terms {
+      p {
+        margin-bottom: 32px;
+      }
+
+      .terms-text-container {
+        margin-bottom: 32px;
+        ul {
+          padding-left: 25px;
+        }
+      }
+    }
+    .terms-change {
+      p {
+        margin-bottom: 32px;
+      }
+    }
+  }
+}
+.main-privacy {
+  font-size: 12px;
+  line-height: 18px;
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    color: $_accent_color;
+    margin-bottom: 4px;
+  }
+  h2 {
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    color: $_accent_color;
+  }
+  p {
+    margin-bottom: 8px;
+  }
+  .privacy-text-container {
+    margin-bottom: 12px;
+    p {
+      margin-bottom: 0;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  }
+  .privacy-contact {
+    p {
+      margin-bottom: 0;
+    }
+  }
+  @include media('desktop') {
+    h1 {
+      font-size: 64px;
+      margin-bottom: 8px;
+    }
+    h2 {
+      margin-bottom: 8px;
+      font-size: 32px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+    .privacy-text-container {
+      margin-bottom: 32px;
+      ul {
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+.main-cookies {
+  font-size: 12px;
+  line-height: 18px;
+  h1 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: normal;
+    color: $_accent_color;
+    margin-bottom: 4px;
+  }
+  h2,
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: normal;
+    color: $_accent_color;
+  }
+  h2 {
+    margin-bottom: 12px;
+  }
+  h3 {
+    margin-bottom: 4px;
+  }
+  p {
+    margin-bottom: 12px;
+  }
+
+  .cookies-text-container {
+    margin-bottom: 12px;
+    p {
+      margin-bottom: 0;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  }
+
+  .cookies-ul-container {
+    margin-bottom: 12px;
+    p {
+      margin-bottom: 8px;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .inner-ul {
+      list-style-type: none;
+      margin-bottom: 8px;
+      li {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .cookies-list-container {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 12px;
+
+    a {
+      max-width: 100%;
+      display: inline;
+      overflow-wrap: break-word;
+      word-break: break-word;
+    }
+  }
+
+  .cookies-contact {
+    p {
+      margin-bottom: 0;
+    }
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+  }
+  @include media('desktop') {
+    h1 {
+      font-size: 64px;
+      margin-bottom: 8px;
+    }
+    h2,
+    h3 {
+      font-size: 32px;
+    }
+    h2 {
+      margin-bottom: 32px;
+    }
+    h3 {
+      margin-bottom: 8px;
+    }
+    p {
+      margin-bottom: 32px;
+    }
+
+    .cookies-text-container {
+      margin-bottom: 32px;
+      ul {
+        padding-left: 25px;
+      }
+    }
+
+    .cookies-ul-container {
+      margin-bottom: 32px;
+      ul {
+        padding-left: 25px;
+      }
+      .inner-ul {
+        li {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .cookies-list-container {
+      padding-left: 25px;
+      margin-bottom: 32px;
+    }
+
+    .cookies-contact {
+      ul {
+        padding-left: 25px;
+      }
+    }
+  }
+}
+
+@include media('desktop') {
+  .main-terms,
+  .main-privacy,
+  .main-cookies {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
