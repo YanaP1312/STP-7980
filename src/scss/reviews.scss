@@ -49,7 +49,7 @@
     --swiper-pagination-bullet-inactive-color: transparent;
     cursor: pointer;
     --swiper-pagination-bullet-horizontal-gap: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
   }
 
   .swiper-pagination-bullet-active {
@@ -67,10 +67,6 @@
   }
 
   @include media('desktop') {
-    // .reviews {
-    //   padding: 80px 0;
-    // }
-
     .section-title {
       font-size: 48px;
       margin-bottom: 60px;

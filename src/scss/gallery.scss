@@ -31,7 +31,7 @@
     --swiper-pagination-bullet-inactive-color: transparent;
     cursor: pointer;
     --swiper-pagination-bullet-horizontal-gap: 2px;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease-in-out;
   }
 
   .swiper-pagination-bullet-active {
