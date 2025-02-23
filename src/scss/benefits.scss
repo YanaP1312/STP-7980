@@ -1,4 +1,4 @@
-// text-mixin
+// // text-mixin
 @mixin benefits {
   justify-content: center;
   align-items: center;
@@ -9,7 +9,6 @@
   font-weight: 400;
   line-height: 18px;
   color: $color;
-  // padding: 25px 14px;
   @include media(desktop) {
     font-size: 20px;
     line-height: 28px;
@@ -26,12 +25,15 @@
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 24px;
+    @include media(desktop) {
+      font-size: 48px;
+    }
   }
 
   &-list {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 23px;
     @include media(desktop) {
       justify-content: center;
       flex-direction: initial;
@@ -54,7 +56,6 @@
       &--white {
         @include benefits-text($_fon_color);
       }
-
     }
 
     &--variant-1 {

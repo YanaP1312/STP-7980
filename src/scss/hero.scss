@@ -16,7 +16,7 @@
 
 .hero-content {
   @include media(desktop) {
-   position: relative;
+    position: relative;
   }
 }
 
@@ -49,7 +49,7 @@
   font-size: 12px;
   line-height: 18px;
   text-align: left;
-  padding: 12px 0 0 0;
+  padding: 12px 0 12px 0;
   @include media(desktop) {
     font-size: 20px;
     width: 508px;
@@ -72,6 +72,8 @@
   gap: 10px;
   @include media(desktop) {
     width: 508px;
+    height: 70px;
+    font-size: 32px;
   }
 }
 
