@@ -1,5 +1,8 @@
 .play {
   padding-top: 60px;
+  @include media(desktop) {
+    padding-top: 160px;
+  }
 }
 
 .play-list {
@@ -19,6 +22,10 @@
   margin-bottom: 50px;
   font-size: 24px;
   font-weight: 600;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 64px;
+  }
 }
 
 .item-content {
@@ -55,9 +62,9 @@
     padding: 38px 32px 38px 30px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
     font-size: 20px;
     line-height: 28px;
+    margin-left: 38px;
   }
 }
 
@@ -91,5 +98,13 @@
   }
   &--5 {
     background-color: $_accent_color;
+  }
+
+  @include media(desktop) {
+    width: 80px;
+    height: 80px;
+    font-size: 32px;
+    top: -38px;
+    left: -38px;
   }
 }

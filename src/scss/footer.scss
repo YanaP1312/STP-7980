@@ -9,6 +9,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  @include media(desktop) {
+    display: flex;
+    padding: 60px 391px 60px 392px;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .footer-text {
@@ -20,6 +26,13 @@
       content: '|';
       color: $_black_color;
       margin: 0 2px;
+      @include media(desktop) {
+        margin: 0 10px;
+      }
     }
+  }
+
+  @include media(desktop) {
+    font-size: 16px;
   }
 }
