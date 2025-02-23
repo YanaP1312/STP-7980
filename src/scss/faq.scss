@@ -1,5 +1,6 @@
 .faq {
-  padding: 30px 0;
+  padding-top: 60px;
+  padding-bottom: 30px;
 
   .title {
     color: #000;
@@ -35,7 +36,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
   }
 
   .faq-item.open .icon-faq {
@@ -51,7 +52,7 @@
     opacity: 0;
     margin-top: 12px;
     text-align: justify;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease-in-out;
   }
   .faq-item.open .answer {
     opacity: 1;
@@ -88,6 +89,7 @@
 
 @include media('desktop') {
   .faq {
-    padding: 80px 0;
+    padding-top: 160px;
+    padding-bottom: 80px;
   }
 }

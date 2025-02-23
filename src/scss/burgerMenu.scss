@@ -38,3 +38,12 @@
 .mob-menu .nav-link {
   padding: 0;
 }
+
+.icon-mob-close img {
+  transition: opacity 0.3s ease-in-out;
+  &:hover {
+    width: 42px;
+    height: 42px;
+    content: url('./img/icons/close-icon-hover@2x.png');
+  }
+}
