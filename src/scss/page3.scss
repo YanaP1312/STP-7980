@@ -9,13 +9,10 @@
     display: none;
   }
 
-  picture img {
-    transition: opacity 0.3s ease-in-out;
-    &:hover {
-      width: 24px;
-      height: 24px;
-      content: url('../img/icons/arrow-back-hover@2x.png');
-    }
+  .link:hover img {
+    width: 24px;
+    height: 24px;
+    content: url('../img/icons/arrow-back-hover@2x.png');
   }
 
   @include media('desktop') {
@@ -24,7 +21,6 @@
       padding-bottom: 40px;
 
       .link {
-        transition: color 0.3s ease-in-out;
         &:hover {
           color: $_accent_color;
         }
