@@ -1,6 +1,11 @@
 .footer {
   margin-top: 42px;
   background: $_pink_color;
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+  }
 }
 
 .footer-container {
@@ -11,7 +16,8 @@
   justify-content: center;
   @include media(desktop) {
     display: flex;
-    padding: 60px 391px 60px 392px;
+    padding: 60px 0;
+    width: 492px;
     justify-content: center;
     align-items: center;
   }
