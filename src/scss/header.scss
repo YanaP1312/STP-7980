@@ -20,9 +20,19 @@
   padding-bottom: 22px;
   display: block;
   color: #000;
-  transition: color 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   &:hover {
     color: $_accent_color;
+    font-weight: 500;
+  }
+  @include media('desktop') {
+    &:hover {
+      font-weight: 400;
+    }
+    &:active {
+      color: $_accent_color;
+      font-weight: 500;
+    }
   }
 }
 .btn-mob-open {
@@ -30,8 +40,6 @@
   border: none;
   margin: 18px 0;
   padding: 0;
-  @include media('mobile') {
-  }
 
   @include media('desktop') {
     display: none;

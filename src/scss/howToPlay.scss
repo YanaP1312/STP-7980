@@ -19,6 +19,10 @@
   margin-bottom: 50px;
   font-size: 24px;
   font-weight: 600;
+  @include media(desktop) {
+    margin-bottom: 64px;
+    font-size: 48px;
+  }
 }
 
 .item-content {

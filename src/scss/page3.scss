@@ -15,6 +15,9 @@
     content: url('../img/icons/arrow-back-hover@2x.png');
   }
 
+  footer {
+    margin-top: 42px;
+  }
   @include media('desktop') {
     .add-page-header {
       padding-top: 40px;
@@ -225,7 +228,7 @@
 
     a {
       max-width: 100%;
-      display: inline;
+      display: inline-block;
       overflow-wrap: break-word;
       word-break: break-word;
     }
@@ -297,5 +300,8 @@
   .main-cookies {
     font-size: 20px;
     line-height: 28px;
+  }
+  .additional-page footer {
+    margin-top: 60px;
   }
 }

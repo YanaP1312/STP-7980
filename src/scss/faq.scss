@@ -1,6 +1,5 @@
 .faq {
   padding-top: 60px;
-  padding-bottom: 30px;
 
   .title {
     color: #000;
@@ -90,6 +89,5 @@
 @include media('desktop') {
   .faq {
     padding-top: 160px;
-    padding-bottom: 80px;
   }
 }
