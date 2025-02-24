@@ -1,5 +1,6 @@
 .gallery {
-  padding-top: 30px;
+  padding-top: 60px;
+  padding-bottom: 42px;
 
   .section-title {
     font-size: 24px;
@@ -92,6 +93,7 @@
 
 @include media('desktop') {
   .gallery {
-    padding-top: 80px;
+    padding-top: 160px;
+    padding-bottom: 170px;
   }
 }
