@@ -70,10 +70,16 @@
   background-color: $_accent_color;
   border: none;
   gap: 10px;
+  transition: all 0.3s ease-in-out;
   @include media(desktop) {
     width: 508px;
     height: 70px;
     font-size: 32px;
+  }
+  &:hover {
+    cursor: pointer;
+    background-color: $_pink_color;
+    color: $_black_color;
   }
 }
 
