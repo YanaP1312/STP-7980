@@ -47,3 +47,8 @@
     content: url('../img/icons/close-icon-hover@2x.png');
   }
 }
+
+.no-scroll {
+  overflow: hidden;
+  height: 100vh;
+}

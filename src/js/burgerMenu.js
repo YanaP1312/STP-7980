@@ -5,9 +5,11 @@ const linkNav = document.querySelectorAll('.nav-link');
 
 const openMobMenu = () => {
   mobMenu.classList.add('is-open');
+  document.body.classList.add('no-scroll');
 };
 const closeMobMenu = () => {
   mobMenu.classList.remove('is-open');
+  document.body.classList.remove('no-scroll');
   openMobMenuBtn.blur();
 };
 
